@@ -36,16 +36,7 @@ const Hero = () => {
                 <Button size="lg" className="px-8 py-3 text-lg">Solicitar Demonstração</Button>
                 
               </div>
-              <div className="mt-8 flex items-center space-x-6 text-sm text-gray-500">
-                <div className="flex items-center space-x-2">
-                  <Users className="h-4 w-4" />
-                  <span>+50.000 empresas</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <BarChart3 className="h-4 w-4" />
-                  <span>300% mais vendas</span>
-                </div>
-              </div>
+              
             </div>
 
             <div className="animate-slide-up lg:ml-8">
