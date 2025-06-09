@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Users, BarChart3 } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-orange-100">
+  return <div className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-orange-100">
       {/* Navigation */}
       <nav className="relative z-10 flex items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex items-center space-x-2">
@@ -36,12 +33,8 @@ const Hero = () => {
                 Transforme seu atendimento com chatbots inteligentes, automação completa e integração com CRM. Aumente suas vendas em até 300%.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="px-8 py-3 text-lg">
-                  Teste Grátis por 7 dias
-                </Button>
-                <Button variant="outline" size="lg" className="px-8 py-3 text-lg">
-                  Ver Demonstração
-                </Button>
+                <Button size="lg" className="px-8 py-3 text-lg">Solicitar Demonstração</Button>
+                
               </div>
               <div className="mt-8 flex items-center space-x-6 text-sm text-gray-500">
                 <div className="flex items-center space-x-2">
@@ -86,8 +79,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Hero;
