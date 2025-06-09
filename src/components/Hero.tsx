@@ -1,22 +1,52 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Users, BarChart3 } from "lucide-react";
 const Hero = () => {
-  return <div className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-orange-100">
+  return (
+    <div className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-orange-100">
       {/* Navigation */}
       <nav className="relative z-10 flex items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex items-center space-x-2">
-          <MessageCircle className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold text-gray-900">
+          <MessageCircle className="h-10 w-10 text-primary" />
+          <span className="text-4xl font-bold text-gray-900">
             <span className="text-blue-600">Atendi.</span>
             <span className="text-orange-500">plus</span>
           </span>
         </div>
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-gray-600 hover:text-primary transition-colors">Funcionalidades</a>
-          <a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors">Depoimentos</a>
-          <a href="#pricing" className="text-gray-600 hover:text-primary transition-colors">Preços</a>
-          <Button variant="outline" className="mr-2">Entrar</Button>
-          <Button>Começar Grátis</Button>
+          <a
+            href="#features"
+            className="text-gray-600 hover:text-primary transition-colors"
+          >
+            Funcionalidades
+          </a>
+          <a
+            href="#testimonials"
+            className="text-gray-600 hover:text-primary transition-colors"
+          >
+            Depoimentos
+          </a>
+          <a
+            href="#pricing"
+            className="text-gray-600 hover:text-primary transition-colors"
+          >
+            Preços
+          </a>
+          <Button
+            variant="outline"
+            className="mr-2"
+            onClick={() => {
+              window.open("https://app.atendi.plus/login", "_blank");
+            }}
+          >
+            Entrar
+          </Button>
+          <Button
+            onClick={() => {
+              window.open("https://wa.me/554498593444", "_blank");
+            }}
+          >
+            Solicitar Demonstração
+          </Button>
         </div>
       </nav>
 
@@ -26,17 +56,25 @@ const Hero = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
-                Automatize seu
-                <span className="text-primary block">WhatsApp Business</span>
+                Revolucione seu atendimento com nosso
+                <span className="text-primary"> chatbot para WhatsApp!</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 max-w-xl">
-                Transforme seu atendimento com chatbots inteligentes, automação completa e integração com CRM. Aumente suas vendas em até 300%.
+                O Atendi.plus é uma solução completa de chatbot e
+                multiatendimento para WhatsApp, ideal para automatizar
+                conversas, captar leads e aumentar suas vendas.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="px-8 py-3 text-lg">Solicitar Demonstração</Button>
-                
+                <Button
+                  onClick={() => {
+                    window.open("https://wa.me/554498593444", "_blank");
+                  }}
+                  size="lg"
+                  className="px-8 py-3 text-lg"
+                >
+                  Solicitar Demonstração
+                </Button>
               </div>
-              
             </div>
 
             <div className="animate-slide-up lg:ml-8">
@@ -48,18 +86,29 @@ const Hero = () => {
                         <MessageCircle className="h-5 w-5 text-green-600" />
                       </div>
                       <div>
-                        <p className="font-medium text-gray-900">Bot Inteligente</p>
-                        <p className="text-sm text-gray-500">Atendimento 24/7 automático</p>
+                        <p className="font-medium text-gray-900">
+                          Bot Inteligente
+                        </p>
+                        <p className="text-sm text-gray-500">
+                          Atendimento 24/7 automático
+                        </p>
                       </div>
                     </div>
                     <div className="bg-gray-50 rounded-lg p-4">
-                      <p className="text-sm text-gray-600">Olá! Como posso ajudar você hoje?</p>
+                      <p className="text-sm text-gray-600">
+                        Olá! Como posso ajudar você hoje?
+                      </p>
                     </div>
                     <div className="bg-primary rounded-lg p-4 text-white ml-8">
-                      <p className="text-sm">Gostaria de saber sobre os planos</p>
+                      <p className="text-sm">
+                        Gostaria de saber sobre os planos
+                      </p>
                     </div>
                     <div className="bg-gray-50 rounded-lg p-4">
-                      <p className="text-sm text-gray-600">Perfeito! Temos planos a partir de R$ 97/mês. Posso agendar uma demonstração?</p>
+                      <p className="text-sm text-gray-600">
+                        Perfeito! Temos planos a partir de R$ 99,90/mês. Posso
+                        agendar uma demonstração?
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -70,6 +119,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
 export default Hero;
