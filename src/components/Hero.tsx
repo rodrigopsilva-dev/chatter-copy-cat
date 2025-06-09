@@ -1,9 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Users, BarChart3 } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100">
+    <div className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-orange-100">
       {/* Navigation */}
       <nav className="relative z-10 flex items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex items-center space-x-2">
@@ -79,7 +80,7 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="absolute -bottom-4 -right-4 h-20 w-20 rounded-full bg-primary/10 animate-pulse"></div>
-                <div className="absolute -top-4 -left-4 h-16 w-16 rounded-full bg-blue-200/50 animate-pulse delay-1000"></div>
+                <div className="absolute -top-4 -left-4 h-16 w-16 rounded-full bg-orange-200/50 animate-pulse delay-1000"></div>
               </div>
             </div>
           </div>
