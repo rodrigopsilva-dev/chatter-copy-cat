@@ -61,26 +61,6 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">
             © 2025 Atendi.plus. Todos os direitos reservados.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a
-              href="#"
-              className="text-gray-400 hover:text-primary transition-colors text-sm"
-            >
-              Política de Privacidade
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-primary transition-colors text-sm"
-            >
-              Termos de Uso
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-primary transition-colors text-sm"
-            >
-              LGPD
-            </a>
-          </div>
         </div>
       </div>
     </footer>
