@@ -8,7 +8,10 @@ const Hero = () => {
       <nav className="relative z-10 flex items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex items-center space-x-2">
           <MessageCircle className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold text-gray-900">Atendi.plus</span>
+          <span className="text-xl font-bold text-gray-900">
+            <span className="text-blue-600">Atendi.</span>
+            <span className="text-orange-500">plus</span>
+          </span>
         </div>
         <div className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-gray-600 hover:text-primary transition-colors">Funcionalidades</a>

@@ -9,7 +9,10 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <MessageCircle className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">Atendi.plus</span>
+              <span className="text-xl font-bold">
+                <span className="text-blue-400">Atendi.</span>
+                <span className="text-orange-400">plus</span>
+              </span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               A plataforma completa para automatizar seu WhatsApp Business e aumentar suas vendas com inteligência artificial.
