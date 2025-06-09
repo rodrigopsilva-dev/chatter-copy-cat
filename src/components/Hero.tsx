@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Users, BarChart3 } from "lucide-react";
 
@@ -9,7 +8,7 @@ const Hero = () => {
       <nav className="relative z-10 flex items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex items-center space-x-2">
           <MessageCircle className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold text-gray-900">AtendeChat</span>
+          <span className="text-xl font-bold text-gray-900">Atendi.plus</span>
         </div>
         <div className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-gray-600 hover:text-primary transition-colors">Funcionalidades</a>
