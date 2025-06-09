@@ -2,7 +2,7 @@ import { MessageCircle, Mail, Phone, MapPin } from "lucide-react";
 const Footer = () => {
   return <footer className="bg-gray-900 text-white">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="grid grid-cols-3 md:grid-cols-4 gap-8">
+        <div className="flex justify-between ">
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div>
+          <div className="w-56 ">
             <h4 className="font-semibold mb-4">Produto</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#" className="hover:text-primary transition-colors">Funcionalidades</a></li>
